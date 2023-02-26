@@ -8,13 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>My Website</title>
     <style>
-         header {
+        body{
             background-image: url('assets/img/work3.jpg');
             background-size: cover;
-            box-shadow: aqua;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh; /* or any other desired height */
         }
         .back-to-top{
             position: fixed;
@@ -27,7 +23,6 @@
             color: #fff;
             cursor: pointer;
             padding: 10px;
-            border-radius: 50%;
             z-index:999;
         }
         .back-to-top:hover{
@@ -36,100 +31,120 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-success">
-            <div class="container-fluid">
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <!-- Header avec la première navbar --> 
+   <header> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success"> 
+        <div class="container-fluid"> 
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarNav"> 
+                <ul class="navbar-nav">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          LANDINGS
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b>LANDINGS</b>
                         </a>
-                      </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      DOCUMENTATION
-                    </a>
-                  </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">BOOKING FORM</a>
-                  </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span class="navbar-text text-white">
-                    CALL US TODAY:&nbsp;774459734 <i class="fas fa-phone"></i>
-                  </span>           
-                </ul>
-              </div>
-            </div>
-          </nav>
-        <nav class="navbar navbar-expand-lg bg-light">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">BAKELI</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
-                  </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">SERVICES</a>
-                  </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">TEAM</a>
-                  </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">CASE RESULTS</a>
-                  </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">TESTIMONIALS</a>
-                  </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">CONTACTS</a>
-                  </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </ul>
-              </div>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b>DOCUMENTATION</b>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                      <li class="nav-item">
+                    <a class="nav-link" href="#"><b>BOOKING FORM</b></a>
+                  </li>
+                </ul> 
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><b>CALL US TODAY:&nbsp;774459734&nbsp;<i class="fas fa-phone"></i></b></a>
+                    </li>
+                  </ul>
+            </div> 
+        </div> 
+    </nav> 
+    </header> 
+    <!-- Deuxième navbar --> 
+    <nav id="second-navbar" class="navbar navbar-expand-lg navbar-light bg-light"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b>BAKELI</b></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">SERVICES</a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">TEAM</a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">CASE RESULTS</a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">TESTIMONIALS</a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">CONTACTS</a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <form class="justify-content-end">
-                <button class="btn btn-outline-success me-2" type="button">BOOK NOW</button>
-                </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button class="btn btn-outline-success me-2" type="button">BOOK NOW</button>
+              </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
-          </nav>
-          <div class="jumbotron text-left">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div style="padding: 100px;">
-                        <h6 class="display-7 text-white text-left">PROVIDING SERVICES SINCE 1992</h6>
-                        <h1 class="display-6 text-white text-left">
-                        <b>SMALL <br> BUSSINESS <br> ATTORNEY</b>
-                        </h1>
-                    </div>
-                    </div>
-                    <div class="col-md-6 justify-content-end">
-                        <div style="padding: 60px;"></div>
-                        <div class="card-body">
-                            <div class="card" style="width: 25rem;">
-                                <div class="card-body">
-                                    <h1 class="card-title text-center">Get a Free<br>Consultation</h1>
-                                    <form class="text-center">
-                                        <input type="text" placeholder="First name"><br><br>
-                                        <input type="text" placeholder="Mobile phone"><br><br>
-                                        <input type="checkbox" id="terms" name="terms" value="terms">
-                                        <h7 for="terms">I've read and agree with the<span style="color:green;">Terms & Policy</span></h7><br><br>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Get a Consultation" class="w-75" style="background-color: green; color: white;">
-                                    </form>
-                                </div>
-                              </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
+            
+          </div> 
+    </nav>
+    <div class="jumbotron text-left">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div style="padding: 100px;">
+                    <h6 class="display-7 text-white text-left">PROVIDING SERVICES SINCE 1992</h6>
+                    <h1 class="display-6 text-white text-left">
+                    <b>SMALL <br> BUSSINESS <br> ATTORNEY</b>
+                    </h1>
                 </div>
-               
+                </div>
+                <div class="col-md-4 container d-flex justify-content-end align-items-center mt-5 top-0">
+                    <div class="card p-4" style="width: 400px;"> 
+                        <h2 class="text-center mb-4">Get a free<br>consultation</h2> 
+                        <form> 
+                            <div class="mb-3"> 
+                                <input type="name" class="form-control" id="email" placeholder="First name" aria-describedby="emailHelp" required>
+                             </div> 
+                             <div class="mb-3"> 
+                                <input type="phone" class="form-control" placeholder="Mobile Phone" id="password" required> 
+                            </div> 
+                            <div class="mb-3 form-check"> 
+                                <input type="checkbox" class="form-check-input" id="terms" required> 
+                                <label class="form-check-label" for="terms">I've read and agree with the<span style="color:green;">Terms & Policy</span></label> 
+                            </div> 
+                            <button type="submit" class="btn btn-success w-100">Get a Consultation</button> 
+                        </form> 
+                    </div> 
+                </div>
+                </div>
+                </div>
             </div>
             <button class="back-to-top" onclick="window.scrollTo(0,0);">
-                <i class="fa fa-arrow-up"></i>
+                <i class="fa fa-arrow-down"></i>
             </button>
-    </header>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>        
 </body>
 </html>
